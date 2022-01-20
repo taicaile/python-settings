@@ -17,3 +17,15 @@ To perform test,
 ```bash
 python tests/test.py
 ```
+
+Usage,
+
+```bash
+from settings import settings
+# if set module
+from . import defaults
+settings.setmodule(defaults)
+
+# get value
+settings.get(KEY)
+```
