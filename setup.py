@@ -1,7 +1,7 @@
 """setup"""
 import io
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 def read_file(filename):
@@ -25,7 +25,7 @@ setup(
     description="Load settings in various ways for Python projects",
     long_description=read_file("README.md"),
     author="taicaile",
-    #   author_email='',
-    #   url='',
-    packages=["settings"],
+    url="https://github.com/taicaile/python-settings",
+    packages=find_packages(),
+    install_requires=read_requirements("requirements.txt"),
 )
